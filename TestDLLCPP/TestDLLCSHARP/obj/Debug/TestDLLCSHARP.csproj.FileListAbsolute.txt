@@ -1,0 +1,7 @@
+F:\5A_3DJV\MachineLearning\TestDLLCPP\TestDLLCSHARP\bin\Debug\TestDLLCSHARP.dll
+F:\5A_3DJV\MachineLearning\TestDLLCPP\TestDLLCSHARP\bin\Debug\TestDLLCSHARP.pdb
+F:\5A_3DJV\MachineLearning\TestDLLCPP\TestDLLCSHARP\obj\Debug\TestDLLCSHARP.dll
+F:\5A_3DJV\MachineLearning\TestDLLCPP\TestDLLCSHARP\obj\Debug\TestDLLCSHARP.pdb
+F:\5A_3DJV\MachineLearning\TestDLLCPP\TestDLLCSHARP\bin\Debug\UnityEngine.dll
+F:\5A_3DJV\MachineLearning\TestDLLCPP\TestDLLCSHARP\bin\Debug\UnityEngine.xml
+F:\5A_3DJV\MachineLearning\TestDLLCPP\TestDLLCSHARP\obj\Debug\TestDLLCSHARP.csprojResolveAssemblyReference.cache
