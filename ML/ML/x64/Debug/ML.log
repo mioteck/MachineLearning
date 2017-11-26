@@ -1,2 +1,19 @@
-﻿  Source.cpp
-  ML.vcxproj -> F:\5A_3DJV\MachineLearning\c++\ML\x64\Debug\ML.exe
+﻿  function.cpp
+f:\5a_3djv\machinelearning\git\machinelearning\ml\ml\function.cpp(60): warning C4244: 'initialisation' : conversion de 'Eigen::EigenBase<Derived>::Index' en 'int', perte possible de données
+          with
+          [
+              Derived=Eigen::Matrix<double,-1,1,0,-1,1>
+          ]
+f:\5a_3djv\machinelearning\git\machinelearning\ml\ml\function.cpp(64): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+f:\5a_3djv\machinelearning\git\machinelearning\ml\ml\function.cpp(89): warning C4244: 'initialisation' : conversion de 'Eigen::EigenBase<Derived>::Index' en 'int', perte possible de données
+          with
+          [
+              Derived=Eigen::Matrix<double,-1,1,0,-1,1>
+          ]
+f:\5a_3djv\machinelearning\git\machinelearning\ml\ml\function.cpp(93): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+f:\5a_3djv\machinelearning\git\machinelearning\ml\ml\function.cpp(103): warning C4244: '+=' : conversion de 'double' en 'float', perte possible de données
+  Source.cpp
+  Génération de code en cours...
+  Ignoré... (aucune modification pertinente détectée)
+  Enum.h
+  ML.vcxproj -> F:\5A_3DJV\MachineLearning\GIT\MachineLearning\ML\x64\Debug\ML.exe
