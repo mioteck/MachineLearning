@@ -1,5 +1,6 @@
 #include "function.h"
 
+
 int main()
 {
 
@@ -9,10 +10,9 @@ int main()
 	int* r = new int[4]{ -1, -1,1 ,1 };*/
 
 	float e[] = { 1.0f,0.0f,0.0f,1.0f,1.0f,1.0f };
-	std::cout << sizeof(e) / sizeof(e[0]) << std::endl;
 	int e_size = 6;
 	int e_offset = 2;
-	int* r = new int[3]{ -1, -1,1};
+	int r[] = { -1, -1,1};
 
 	//float* w = ResolveRosenblatt(e, e_size, e_offset, r, 0.01);
 	//float* w = ResolvePLA(e, e_size, e_offset, r, 0.01);

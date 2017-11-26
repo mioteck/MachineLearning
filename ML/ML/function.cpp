@@ -1,8 +1,9 @@
 #include "function.h"
 
-Eigen::MatrixXd CreateMatrix(float* arr, int o)
+
+template<typename T>
+Eigen::MatrixXd CreateMatrixEntries(T* arr, int s, int o)
 {
-	int s = ARRAY_SIZE(arr);
 	int rows = s / o;
 	int cols = o + 1;
 	int cpt = 0;
@@ -13,7 +14,7 @@ Eigen::MatrixXd CreateMatrix(float* arr, int o)
 	{
 		for (int x = 0; x < cols; x++)
 		{
-			if (x == 0) mat(y,x) = 1;
+			if (x == 0) mat(y, x) = 1;
 			else
 			{
 				mat(y, x) = arr[cpt];
@@ -25,21 +26,43 @@ Eigen::MatrixXd CreateMatrix(float* arr, int o)
 	return mat;
 }
 
+template<typename T>
+Eigen::MatrixXd CreateMatrix(T* arr, int s, int o)
+{
+	int rows = s / o;
+	int cols = o;
+	int cpt = 0;
+
+	Eigen::MatrixXd mat(rows, cols);
+
+	for (int y = 0; y < rows; y++)
+	{
+		for (int x = 0; x < cols; x++)
+		{
+			mat(y, x) = arr[cpt];
+			cpt++;
+
+		}
+	}
+
+	return mat;
+}
+
 float * InitWeight(int size)
 {
 	float* w = new float[size];
 
-	for(int i=0; i<size; i++)
+	for (int i = 0; i < size; i++)
 		w[i] = -1.0f + static_cast<float>(rand()) / (static_cast<float>(RAND_MAX / (1 - (-1))));
 
 	return w;
 }
 
-float* ResolveRosenblatt(float* entries, int offset, int* results, float step)
+float* ResolveRosenblatt(float* entries, int size, int offset, int* results, float step)
 {
-	Eigen::MatrixXd mat = CreateMatrix(entries, offset);
+	Eigen::MatrixXd mat = CreateMatrixEntries(entries, size, offset);
+	int rows = size / offset;
 	float* w = InitWeight(offset + 1);
-	int rows = ARRAY_SIZE(entries) / offset;
 
 	int* perceptronResult = new int[rows];
 
@@ -66,10 +89,9 @@ void RuleRosenblatt(Eigen::VectorXd row, float* w, int p, int r, float s)
 	}
 }
 
-float* ResolvePLA(float* entries, int offset, int* results, float step)
+float* ResolvePLA(float* entries, int size, int offset, int* results, float step)
 {
-	int size = ARRAY_SIZE(entries);
-	Eigen::MatrixXd mat = CreateMatrix(entries, offset);
+	Eigen::MatrixXd mat = CreateMatrixEntries(entries, size, offset);
 	float* w = InitWeight(offset + 1);
 	int rows = size / offset;
 
@@ -105,7 +127,7 @@ int Perceptron(Eigen::VectorXd row, float* w)
 		total += row(i) * w[i];
 	}
 
-	return (total < 0)?-1:1;
+	return (total < 0) ? -1 : 1;
 }
 
 bool isClassified(int* pResult, int* tResult, int size)
@@ -119,12 +141,12 @@ bool isClassified(int* pResult, int* tResult, int size)
 
 float * LinearRegressionResolve(float* entries, int size, int offset, int* results)
 {
-	Eigen::MatrixXd mat = CreateMatrix(entries, offset);
-	Eigen::MatrixXd matPI = mat.completeOrthogonalDecomposition().pseudoInverse();
+	Eigen::MatrixXd mat = CreateMatrixEntries(entries, size, offset);
+
 
 	float* w = new float[offset + 1];
 
 	int rows = mat.rows();
 
-	return nullptr;
+	return w;
 }
