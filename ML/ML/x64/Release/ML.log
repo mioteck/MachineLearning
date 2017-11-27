@@ -1,0 +1,24 @@
+﻿  Enum.h
+  function.cpp
+function.cpp(84): warning C4244: 'initialisation' : conversion de 'Eigen::EigenBase<Derived>::Index' en 'int', perte possible de données
+          with
+          [
+              Derived=Eigen::Matrix<double,-1,1,0,-1,1>
+          ]
+function.cpp(88): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+function.cpp(113): warning C4244: 'initialisation' : conversion de 'Eigen::EigenBase<Derived>::Index' en 'int', perte possible de données
+          with
+          [
+              Derived=Eigen::Matrix<double,-1,1,0,-1,1>
+          ]
+function.cpp(117): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+function.cpp(127): warning C4244: '+=' : conversion de 'double' en 'float', perte possible de données
+function.cpp(153): warning C4244: '=' : conversion de 'double' en 'float', perte possible de données
+  Source.cpp
+Source.cpp(18): warning C4305: 'argument' : troncation de 'double' à 'float'
+  Génération de code en cours
+  185 of 217 functions (85.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    10 functions had inline decision re-evaluated but remain unchanged
+  Fin de la génération du code
+  ML.vcxproj -> F:\5A_3DJV\MachineLearning\GIT\MachineLearning\ML\x64\Release\ML.exe

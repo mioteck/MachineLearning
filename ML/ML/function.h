@@ -1,9 +1,7 @@
 #pragma once
 
 #include <iostream>
-#include <array>
 #include <Dense>
-#include <QR>
 
 template<typename T>
 Eigen::MatrixXd CreateMatrixEntries(T*, int, int);

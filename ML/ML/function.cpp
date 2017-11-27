@@ -141,12 +141,17 @@ bool isClassified(int* pResult, int* tResult, int size)
 
 float * LinearRegressionResolve(float* entries, int size, int offset, int* results)
 {
+	Eigen::MatrixXd r = CreateMatrix(results, size / offset, 1);
 	Eigen::MatrixXd mat = CreateMatrixEntries(entries, size, offset);
 
+	Eigen::VectorXd v = (mat.transpose()*mat).inverse()*(mat.transpose()*r);
 
 	float* w = new float[offset + 1];
 
-	int rows = mat.rows();
+	for (int i = 0; i < offset + 1; i++)
+	{
+		w[i] = v(i);
+	}
 
 	return w;
 }
