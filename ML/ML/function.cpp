@@ -48,7 +48,7 @@ Eigen::MatrixXd CreateMatrix(T* arr, int s, int o)
 	return mat;
 }
 
-float * InitWeight(int size)
+float* InitWeight(int size)
 {
 	float* w = new float[size];
 
