@@ -1,5 +1,15 @@
-﻿  Source.cpp
-  function.cpp
-  Enum.h
-  Génération de code en cours...
-  ML.vcxproj -> F:\5A_3DJV\MachineLearning\GIT\MachineLearning\ML\x64\Debug\ML.exe
+﻿Build started 29/11/2017 20:42:53.
+     1>Project "D:\Utilisateurs\Downloads\MachineLearning\ML\ML\ML.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I..\..\Eigen /ZI /nologo /W0 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt Source.cpp
+         Source.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Utilisateurs\Downloads\MachineLearning\ML\x64\Debug\ML.exe" /INCREMENTAL /NOLOGO /LIBPATH:..\x64\Debug MLLib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"D:\Utilisateurs\Downloads\MachineLearning\ML\x64\Debug\ML.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Utilisateurs\Downloads\MachineLearning\ML\x64\Debug\ML.lib" /MACHINE:X64 x64\Debug\Enum.obj
+         x64\Debug\function.obj
+         x64\Debug\Source.obj
+         ML.vcxproj -> D:\Utilisateurs\Downloads\MachineLearning\ML\x64\Debug\ML.exe
+     1>Done Building Project "D:\Utilisateurs\Downloads\MachineLearning\ML\ML\ML.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.96

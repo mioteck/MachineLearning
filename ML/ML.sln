@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ML", "ML\ML.vcxproj", "{0C9DE11C-EC4A-4574-937E-B3E7FCFECEF4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MLLib", "MLLib\MLLib.vcxproj", "{C48B5E6F-C797-4F74-9F08-44A4E6AAAA85}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MLLib_Unity", "MLLib_Unity\MLLib_Unity.vcxproj", "{B35191C0-C6D2-4BA4-9365-78EBA141EA5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,22 @@ Global
 		{0C9DE11C-EC4A-4574-937E-B3E7FCFECEF4}.Release|x64.Build.0 = Release|x64
 		{0C9DE11C-EC4A-4574-937E-B3E7FCFECEF4}.Release|x86.ActiveCfg = Release|Win32
 		{0C9DE11C-EC4A-4574-937E-B3E7FCFECEF4}.Release|x86.Build.0 = Release|Win32
+		{C48B5E6F-C797-4F74-9F08-44A4E6AAAA85}.Debug|x64.ActiveCfg = Debug|x64
+		{C48B5E6F-C797-4F74-9F08-44A4E6AAAA85}.Debug|x64.Build.0 = Debug|x64
+		{C48B5E6F-C797-4F74-9F08-44A4E6AAAA85}.Debug|x86.ActiveCfg = Debug|Win32
+		{C48B5E6F-C797-4F74-9F08-44A4E6AAAA85}.Debug|x86.Build.0 = Debug|Win32
+		{C48B5E6F-C797-4F74-9F08-44A4E6AAAA85}.Release|x64.ActiveCfg = Release|x64
+		{C48B5E6F-C797-4F74-9F08-44A4E6AAAA85}.Release|x64.Build.0 = Release|x64
+		{C48B5E6F-C797-4F74-9F08-44A4E6AAAA85}.Release|x86.ActiveCfg = Release|Win32
+		{C48B5E6F-C797-4F74-9F08-44A4E6AAAA85}.Release|x86.Build.0 = Release|Win32
+		{B35191C0-C6D2-4BA4-9365-78EBA141EA5C}.Debug|x64.ActiveCfg = Debug|x64
+		{B35191C0-C6D2-4BA4-9365-78EBA141EA5C}.Debug|x64.Build.0 = Debug|x64
+		{B35191C0-C6D2-4BA4-9365-78EBA141EA5C}.Debug|x86.ActiveCfg = Debug|Win32
+		{B35191C0-C6D2-4BA4-9365-78EBA141EA5C}.Debug|x86.Build.0 = Debug|Win32
+		{B35191C0-C6D2-4BA4-9365-78EBA141EA5C}.Release|x64.ActiveCfg = Release|x64
+		{B35191C0-C6D2-4BA4-9365-78EBA141EA5C}.Release|x64.Build.0 = Release|x64
+		{B35191C0-C6D2-4BA4-9365-78EBA141EA5C}.Release|x86.ActiveCfg = Release|Win32
+		{B35191C0-C6D2-4BA4-9365-78EBA141EA5C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
